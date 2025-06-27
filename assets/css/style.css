@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100..900&family=Noto+Sans+Display:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+#logo {
+  width: 200px;
+  max-width: 40vw;
+}
+
+h1 {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+#name {
+  color: #ee0c0c;
+  font-size: 2.5rem;
+}
+
+#va {
+  color: #562fb3;
+  font-size: 2.5rem;
+}
+
+#voice {
+  width: 150px;
+  height: 150px;
+  display: none;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#btn {
+  width: 250px;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(to right, #f32525, #37098d);
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 2px 2px 10px #1591cf, 2px 2px 10px #c92974;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+#btn:hover {
+  box-shadow: 2px 2px 20px #1591cf, 2px 2px 20px #c92974;
+  letter-spacing: 1px;
+}
+
+/* 🔁 Responsive Styles */
+@media (max-width: 768px) {
+  #name,
+  #va {
+    font-size: 2rem;
+  }
+
+  #btn {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  #logo {
+    width: 50vw;
+  }
+
+  #voice {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  #name,
+  #va {
+    font-size: 1.75rem;
+  }
+
+  #voice {
+    width: 100px;
+    height: 100px;
+  }
+
+  #btn {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+}
